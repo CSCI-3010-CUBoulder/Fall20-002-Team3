@@ -98,7 +98,7 @@ double Sign(double num);
 
 // adds n to each element of the vector
 std::vector<int> AddN(std::vector<int> num, int n){
-  for (int i=0;i<num.size();i++){
+  for (int i=0;i<int(num.size());i++){
     num[i] = num[i] + n;
   }
   return num;
@@ -115,7 +115,7 @@ std::vector<int> SubtractN(std::vector<int>, int n);
 
 // subtracts n to each element of the vector
 std::vector<double> SubtractN(std::vector<double> num, double n){
-  for (int i=0;i<num.size();i++){
+  for (int i=0;i<int(num.size());i++){
     num[i] = num[i] -n;
   }
   return num;

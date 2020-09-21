@@ -1,1 +1,5 @@
-https://travis-ci.com/github/CSCI-3010-CUBoulder/Fall20-002-Team3
+language: cpp
+#before_script: cd utility_functions
+script:
+  - make
+  - ./test

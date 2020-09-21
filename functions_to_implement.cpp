@@ -101,7 +101,7 @@ std::vector<int> AddN(std::vector<int> num, int n){
   for (int i=0;i<num.size();i++){
     num[i] = num[i] + n;
   }
-  return num
+  return num;
 }
 // adds n to each element of the vector
 std::vector<double> AddN(std::vector<double>, double n);
@@ -118,5 +118,5 @@ std::vector<double> SubtractN(std::vector<double> num, double n){
   for (int i=0;i<num.size();i++){
     num[i] = num[i] -n;
   }
-  return num
+  return num;
 }

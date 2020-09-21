@@ -1,5 +1,5 @@
 /* String functions section */
-
+#include <vector>
 // Splits a single string on separator into a vector of strings
 std::vector<std::string> Split(std::string whole, std::string separator);
 
@@ -97,7 +97,11 @@ double Sign(double num);
 
 
 // adds n to each element of the vector
-std::vector<int> AddN(std::vector<int>, int n);
+std::vector<int> AddN(std::vector<int>, int n){
+  for (int i=0;i<num.size();i++){
+    num[i] = num[i] +n;
+  }
+}
 
 // adds n to each element of the vector
 std::vector<double> AddN(std::vector<double>, double n);
